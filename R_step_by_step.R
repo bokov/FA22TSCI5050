@@ -189,6 +189,8 @@ length(foo)
 65:38
 -32:12
 seq_len(12)
+seq(-9.7, 8.3,by=0.1)
+
 #' In most other languages, you need to use a `for` loop in order to perform
 #' some sort of change to a series of values. In R, you often don't have to
 #' when you are working with vectors because a lot of functions (including all
@@ -209,7 +211,7 @@ c(baz,foo,"76")
 #' You can also assign or re-assign names later using the `names()` function.
 
 #+ vectors_names1, error=TRUE
-jar <- c(a="cat", best="dog", c= "fish", slow="tutle")
+jar <- c(a="cat", best="dog", c= "fish", slow="turtle")
 print(jar)
 # jar[best]
 jar["best"]
@@ -270,6 +272,9 @@ sum(bat, na.rm= TRUE) # for missing values
 #' `quantile()`.
 quantile(bat) # tells quantiles
 quantile(bat, na.rm=TRUE)
+sum(bat)
+min(bat)
+max(bat)
 #+ vectors_aggregate
 
 #' ### Data Frames
